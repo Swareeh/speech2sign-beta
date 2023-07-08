@@ -11,8 +11,6 @@ convert_btn.onclick = async function () {
 
     for (let i = 0; i < input_value.length; i++) {
 
-        i = String(i)
-
         if (input_value[i] == ' ') {
             output.src = `./Signs/black.jpg `
         } else {
