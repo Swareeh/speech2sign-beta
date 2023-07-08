@@ -1,1 +1,0 @@
-BUG: When the button is clicked a second time before the 1st one is complete, it overlaps.
