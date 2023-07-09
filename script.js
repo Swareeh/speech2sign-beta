@@ -15,7 +15,8 @@ convert_btn.onclick = async function () {
     }
 
     converter = true
-    const input_value = document.getElementById('input').value
+    var input_value = document.getElementById('input').value
+    input_value = input_value.toUpperCase()
 
     for (let i = 0; i < input_value.length; i++) {
 
