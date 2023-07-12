@@ -25,47 +25,52 @@ convert_btn.onclick = async function () {
         var word = input_value_words[i]
         
         if (word == 'YES') {
-            output.src = './Signs/YES.jpg'
+            output.src = './Signs/Words/YES.jpg'
             await delay(500)
         }
 
         else if (word == 'LOVE') {
-            output.src = './Signs/LOVE.jpg'
+            output.src = './Signs/Words/LOVE.jpg'
             await delay(500)  
         }
 
         else if (word == 'BELIEVE') {
-            output.src = './Signs/BELIEVE.jpg'
+            output.src = './Signs/Words/BELIEVE.jpg'
             await delay(500)  
         }
 
         else if (word == 'FRIEND') {
-            output.src = './Signs/FRIEND.jpg'
+            output.src = './Signs/Words/FRIEND.jpg'
+            await delay(500)  
+        }
+
+        else if (word == 'BYE') {
+            output.src = './Signs/Words/BYE.jpg'
             await delay(500)  
         }
 
         else if (word == 'FRIENDS') {
-            output.src = './Signs/FRIENDS.jpg'
+            output.src = './Signs/Words/FRIENDS.jpg'
             await delay(500)  
         }
 
         else if (word == 'INSPIRATION') {
-            output.src = './Signs/INSPIRATION.jpg'
+            output.src = './Signs/Words/INSPIRATION.jpg'
             await delay(500)  
         }
 
         else if (word == 'NO') {
-            output.src = './Signs/NO.jpg'
+            output.src = './Signs/Words/NO.jpg'
             await delay(500)  
         }
 
         else if (word == 'PLEASE') {
-            output.src = './Signs/PLEASE.jpg'
+            output.src = './Signs/Words/PLEASE.jpg'
             await delay(500)  
         }
 
         else if (word == 'STOP') {
-            output.src = './Signs/STOP.jpg'
+            output.src = './Signs/Words/STOP.jpg'
             await delay(500)  
         }
         
@@ -76,7 +81,7 @@ convert_btn.onclick = async function () {
                 if (word[i] == ' ') {
                     output.src = `./Signs/black.jpg `
                 } else {
-                    output.src = `./Signs/${word[i]}.jpg`
+                    output.src = `./Signs/Alphabets/${word[i]}.jpg`
                 }
                 await delay(500)
             }
