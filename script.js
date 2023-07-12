@@ -18,15 +18,36 @@ convert_btn.onclick = async function () {
     var input_value = document.getElementById('input').value
     input_value = input_value.toUpperCase()
 
-    for (let i = 0; i < input_value.length; i++) {
+    const input_value_words = input_value.split(' ')
 
-        if (input_value[i] == ' ') {
-            output.src = `./Signs/black.jpg `
-        } else {
-            output.src = `./Signs/${input_value[i]}.jpg`
+    for (let i = 0; i < input_value_words.length; i++) {
+
+        var word = input_value_words[i]
+        
+        if (word == 'YES') {
+            output.src = './Signs/YES.jpg'
+            await delay(500)
         }
-        await delay(500)
-    }
 
+        else if (word == 'LOVE') {
+            output.src = './Signs/LOVE.jpg'
+            await delay(500)  
+        }
+        
+        else {
+
+            for (let i = 0; i < word.length; i++) {
+
+                if (word[i] == ' ') {
+                    output.src = `./Signs/black.jpg `
+                } else {
+                    output.src = `./Signs/${word[i]}.jpg`
+                }
+                await delay(500)
+            }
+        }
+
+    }
+    
     converter = false
 }
