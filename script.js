@@ -10,7 +10,7 @@ var converter = false
 convert_btn.onclick = async function () {
 
     if (converter == true) {
-        alert('Converter is already running.')
+        alert('Converter is already running...\n[Press OK to continue]')
         return
     }
 
@@ -33,6 +33,41 @@ convert_btn.onclick = async function () {
             output.src = './Signs/LOVE.jpg'
             await delay(500)  
         }
+
+        else if (word == 'BELIEVE') {
+            output.src = './Signs/BELIEVE.jpg'
+            await delay(500)  
+        }
+
+        else if (word == 'FRIEND') {
+            output.src = './Signs/FRIEND.jpg'
+            await delay(500)  
+        }
+
+        else if (word == 'FRIENDS') {
+            output.src = './Signs/FRIENDS.jpg'
+            await delay(500)  
+        }
+
+        else if (word == 'INSPIRATION') {
+            output.src = './Signs/INSPIRATION.jpg'
+            await delay(500)  
+        }
+
+        else if (word == 'NO') {
+            output.src = './Signs/NO.jpg'
+            await delay(500)  
+        }
+
+        else if (word == 'PLEASE') {
+            output.src = './Signs/PLEASE.jpg'
+            await delay(500)  
+        }
+
+        else if (word == 'STOP') {
+            output.src = './Signs/STOP.jpg'
+            await delay(500)  
+        }
         
         else {
 
@@ -48,6 +83,6 @@ convert_btn.onclick = async function () {
         }
 
     }
-    
+
     converter = false
 }
