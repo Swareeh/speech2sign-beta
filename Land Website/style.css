@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url('./Resources/bg2.jpg');
+    color: white;
+}
+
+header {
+    display: flex;
+}
+
+.branding {
+    display: flex;
+}
+
+
+ul {
+    display: flex;
+    position: relative;
+    left: 200px;
+    top: 35px;
+    list-style: none;
+    font-size: 20px;
+}
+
+li {
+    padding-left: 20px;
+}
