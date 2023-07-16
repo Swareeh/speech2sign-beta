@@ -5,9 +5,20 @@
     margin: 0;
 }
 
+html::-webkit-scrollbar {
+    background-color: rgb(54,12,137);
+    width: 5px;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #A94EFF;
+    border-radius: 10px;
+}
+
 body {
-    background-image: url('./Resources/bg2.jpg');
     color: white;
+    overflow-x: hidden;
 }
 
 header {
@@ -15,7 +26,9 @@ header {
 }
 
 .branding {
-    display: flex;
+    position: relative;
+    top: 155px;
+    left: 325px;
 }
 
 
@@ -23,7 +36,7 @@ ul {
     font-family: 'Kanit', sans-serif;
     display: flex;
     position: relative;
-    left: 200px;
+    left: 410px;
     top: 35px;
     list-style: none;
     font-size: 20px;
@@ -31,4 +44,20 @@ ul {
 
 li {
     padding-left: 20px;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+video {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    z-index: -1;
 }
