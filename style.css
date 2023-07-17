@@ -3,6 +3,7 @@
 
 * {
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {
@@ -19,24 +20,18 @@ html::-webkit-scrollbar-thumb{
 body {
     color: white;
     overflow-x: hidden;
+    background-image: url('./Resources/bg2.jpg');
 }
 
 header {
     display: flex;
 }
 
-.branding {
-    position: relative;
-    top: 155px;
-    left: 325px;
-}
-
-
 ul {
     font-family: 'Kanit', sans-serif;
     display: flex;
     position: relative;
-    left: 410px;
+    left: 425px;
     top: 35px;
     list-style: none;
     font-size: 20px;
@@ -58,6 +53,42 @@ a {
 video {
     position: absolute;
     height: auto;
+    min-height: 100vh;
     width: 100%;
     z-index: -1;
+}
+
+.branding {
+    position: relative;
+    top: 155px;
+    /* left: 325px; */
+    left: 335px;
+    align-content: center;
+}
+
+.discover_btn {
+    position: relative;
+    top: 170px;
+    right: 50px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    border-radius: 40px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.discover_btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.img_deaf {
+    clip-path: circle();
+    height: 500px;
+    float: right;
 }
