@@ -1,5 +1,8 @@
 /* Importing Kanit */
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+/* Importing roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 
 * {
     margin: 0;
@@ -7,12 +10,12 @@
 }
 
 html::-webkit-scrollbar {
-    background-color: rgb(54,12,137);
+    background-color: rgb(54, 12, 137);
     width: 5px;
     border-radius: 10px;
 }
 
-html::-webkit-scrollbar-thumb{
+html::-webkit-scrollbar-thumb {
     background-color: #A94EFF;
     border-radius: 10px;
 }
@@ -53,7 +56,6 @@ a {
 video {
     position: absolute;
     height: auto;
-    min-height: 100vh;
     width: 100%;
     z-index: -1;
 }
@@ -69,7 +71,7 @@ video {
 .discover_btn {
     position: relative;
     top: 170px;
-    right: 50px;
+    right: 70px;
     padding: 10px;
     padding-left: 50px;
     padding-right: 50px;
@@ -87,8 +89,43 @@ video {
     cursor: pointer;
 }
 
+#main_div-1 {
+    height: 100vh;
+}
+
+#main_div-2 {
+    height: 100vh;
+    background-image: url('./Resources/bg6.jpg');
+    /* background-image: linear-gradient(to right bottom, #110434, #180c4c, #230f66, #311080, #410e9a); */
+    /* background-color: #2E007A; */
+    clear: both;
+}
+
+.main_div-text {
+    border: 1px solid white;
+    position: relative;
+    top: 200px;
+    left: 25px;
+    width: 600px;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
 .img_deaf {
-    clip-path: circle();
-    height: 500px;
-    float: right;
+    position: relative;
+    bottom: 75px;
+    left: 650px;
+    border-radius: 5px;
+    /* clip-path: circle(); */
+    height: 450px;
+}
+
+.img_GUI {
+    position: relative;
+    bottom: 75px;
+    left: 650px;
+    border-radius: 5px;
+    /* clip-path: circle(); */
+    height: 400px;
 }
