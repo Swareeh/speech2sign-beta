@@ -94,18 +94,14 @@ video {
 }
 
 #main_div-2 {
-    height: 100vh;
     background-image: url('./Resources/bg6.jpg');
-    /* background-image: linear-gradient(to right bottom, #110434, #180c4c, #230f66, #311080, #410e9a); */
-    /* background-color: #2E007A; */
     clear: both;
 }
 
 .main_div-text {
-    border: 1px solid white;
     position: relative;
     top: 200px;
-    left: 25px;
+    left: 100px;
     width: 600px;
     height: auto;
     font-family: 'Roboto', sans-serif;
@@ -114,18 +110,14 @@ video {
 
 .img_deaf {
     position: relative;
-    bottom: 75px;
-    left: 650px;
+    bottom: 175px;
+    left: 700px;
     border-radius: 5px;
-    /* clip-path: circle(); */
+    clip-path: circle();
     height: 450px;
 }
 
-.img_GUI {
-    position: relative;
-    bottom: 75px;
-    left: 650px;
-    border-radius: 5px;
-    /* clip-path: circle(); */
-    height: 400px;
+#main_div-3 {
+    background-image: url('./Resources/bg8.jpg');
+    height: 100vh;
 }
