@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 /* Importing roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+/* Importing Noto Sans Cypro Minoan */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Cypro+Minoan&display=swap');
 
 * {
     margin: 0;
@@ -25,6 +26,11 @@ body {
     overflow-x: hidden;
     background-image: url('./Resources/bg2.jpg');
 }
+
+section {
+    height: 100vh;
+}
+
 
 header {
     display: flex;
@@ -90,7 +96,7 @@ video {
 }
 
 #main_div-1 {
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 #main_div-2 {
@@ -119,5 +125,47 @@ video {
 
 #main_div-3 {
     background-image: url('./Resources/bg8.jpg');
-    height: 100vh;
+    /* height: 100vh; */
+}
+
+#main_div-3 h1 {
+    font-family: 'Noto Sans Cypro Minoan', sans-serif;
+    display: flex;
+    position: relative;
+    top: 20px;
+    justify-content: center;
+}
+
+.img_UI {
+    height: 400px;
+    position: relative;
+    top: 100px;
+    left: 25px;
+}
+
+#main_div-3 h3 {
+    position: relative;
+    bottom: 200px;
+    left: 700px;
+    width: 600px;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+#main_div-3 button {
+    position: relative;
+    bottom: 150px;
+    left: 700px;
+    padding: 10px 20px 10px 20px;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+}
+
+#main_div-3 button:hover {
+    cursor: pointer;
+    background-color: #022135;
+    color: white;
 }
