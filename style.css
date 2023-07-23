@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 /* Importing roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+/* Importing Noto Sans Cypro Minoan */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Cypro+Minoan&display=swap');
 
 * {
     margin: 0;
@@ -25,6 +26,11 @@ body {
     overflow-x: hidden;
     background-image: url('./Resources/bg2.jpg');
 }
+
+section {
+    height: 100vh;
+}
+
 
 header {
     display: flex;
@@ -90,22 +96,18 @@ video {
 }
 
 #main_div-1 {
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 #main_div-2 {
-    height: 100vh;
     background-image: url('./Resources/bg6.jpg');
-    /* background-image: linear-gradient(to right bottom, #110434, #180c4c, #230f66, #311080, #410e9a); */
-    /* background-color: #2E007A; */
     clear: both;
 }
 
 .main_div-text {
-    border: 1px solid white;
     position: relative;
     top: 200px;
-    left: 25px;
+    left: 100px;
     width: 600px;
     height: auto;
     font-family: 'Roboto', sans-serif;
@@ -114,18 +116,56 @@ video {
 
 .img_deaf {
     position: relative;
-    bottom: 75px;
-    left: 650px;
+    bottom: 175px;
+    left: 700px;
     border-radius: 5px;
-    /* clip-path: circle(); */
+    clip-path: circle();
     height: 450px;
 }
 
-.img_GUI {
+#main_div-3 {
+    background-image: url('./Resources/bg8.jpg');
+    /* height: 100vh; */
+}
+
+#main_div-3 h1 {
+    font-family: 'Noto Sans Cypro Minoan', sans-serif;
+    display: flex;
     position: relative;
-    bottom: 75px;
-    left: 650px;
-    border-radius: 5px;
-    /* clip-path: circle(); */
+    top: 20px;
+    justify-content: center;
+}
+
+.img_UI {
     height: 400px;
+    position: relative;
+    top: 100px;
+    left: 25px;
+}
+
+#main_div-3 h3 {
+    position: relative;
+    bottom: 200px;
+    left: 700px;
+    width: 600px;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+#main_div-3 button {
+    position: relative;
+    bottom: 150px;
+    left: 700px;
+    padding: 10px 20px 10px 20px;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+}
+
+#main_div-3 button:hover {
+    cursor: pointer;
+    background-color: #022135;
+    color: white;
 }
