@@ -107,4 +107,49 @@ body {
 
 /* Mobile Responsive */
 
-@media only screen and (min-width: 320px) and (max-width: 428px) {}
+@media only screen and (min-width: 320px) and (max-width: 428px) {
+
+    * {}
+
+    body {}
+
+    .div_logo {}
+
+    .div_logo img {
+        height: 125px;
+    }
+
+    .main_div {
+        display: flex;
+        flex-direction: column;
+        top: 0vh;
+    }
+
+    .div_1,
+    .div_2 {}
+
+    .div_1-2 {}
+
+    #input_textarea {
+        height: 250px;
+        width: 100%;
+    }
+
+    #mic_icon {}
+
+    #mic_icon:hover {}
+
+    #output {
+        height: auto;
+        width: 100%;
+    }
+
+    #convert_btn {}
+
+    #convert_btn:hover {}
+
+
+    .credits {
+        top: 25px;
+    }
+}
