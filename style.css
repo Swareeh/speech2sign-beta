@@ -7,6 +7,8 @@
 /* Importing Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+/* Desktop Responsive */
+
 * {
     margin: 0;
     scroll-behavior: smooth;
@@ -30,8 +32,31 @@ body {
     scroll-behavior: smooth;
 }
 
-header {
-    display: flex;
+#main_div-1 {
+    height: 100vh;
+}
+
+#menu_brgr {
+    position: absolute;
+    top: 30px;
+    right: 1rem;
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+    width: 30px;
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#nav_connections {
+    /* display: flex; */
 }
 
 ul {
@@ -95,10 +120,6 @@ video {
     cursor: pointer;
 }
 
-#main_div-1 {
-    height: 100vh;
-}
-
 #main_div-2 {
     height: 100vh;
     background-image: url('./Resources/bg6.jpg');
@@ -117,7 +138,7 @@ video {
 
 .img_deaf {
     position: relative;
-    bottom: 175px;
+    bottom: 220px;
     left: 700px;
     border-radius: 5px;
     clip-path: circle();
@@ -186,5 +207,123 @@ video {
     font-weight: lighter;
     font-size: 15px;
     opacity: 75%;
+
+}
+
+/* Tablet Responsive */
+
+/* Mobile Responsive */
+
+@media only screen and (orientation: portrait) and (min-width: 320px) and (max-width: 428px) {
+
+
+    * {}
+
+    html::-webkit-scrollbar {}
+
+    html::-webkit-scrollbar-thumb {}
+
+    body {
+        background-image: url('./Resources/bg.jpg');
+    }
+
+    #main_div-1 {}
+
+    #menu_brgr {
+        position: fixed;
+        display: flex;
+        z-index: 2;
+    }
+
+    .bar {}
+
+    #nav_connections {
+        position: fixed;
+        left: 450px;
+        transition: 1s;
+        background-color: #022135;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        z-index: 1;
+    }
+
+    ul {
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        left: 0px;
+        top: 300px;
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+    }
+
+    li {
+        text-align: center;
+        margin: 0px;
+        padding-left: 0;
+    }
+
+    li:hover {}
+
+    a {}
+
+    video {
+        display: none;
+    }
+
+    .main_div-discover {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 85vh;
+    }
+
+
+    .branding {
+        position: static;
+        top: 0px;
+        left: 0px;
+        height: auto;
+        width: 100%;
+    }
+
+    .discover_btn {
+        position: static;
+        top: 0px;
+        right: 0px;
+    }
+
+    .discover_btn:hover {}
+
+    #main_div-2 {
+        height: 100vh;
+        background-image: url('./Resources/bg6.jpg');
+        clear: both;
+    }
+
+    .main_div-text {
+        text-align: center;
+        position: relative;
+        top: 300px;
+        left: 0px;
+        width: 100%;
+        height: auto;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
+    }
+
+    .img_deaf {
+        position: relative;
+        bottom: 505px;
+        left: 0;
+        right: 0;
+        border-radius: 5px;
+        clip-path: none;
+        height: 275px;
+    }
 
 }
