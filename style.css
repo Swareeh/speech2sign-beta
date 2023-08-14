@@ -239,7 +239,7 @@ video {
     #nav_connections {
         position: fixed;
         left: 450px;
-        transition: 1s;
+        transition: 0.75s;
         background-color: #022135;
         height: 100vh;
         width: 100%;
