@@ -230,7 +230,6 @@ video {
     #main_div-1 {}
 
     #menu_brgr {
-        position: fixed;
         display: flex;
         z-index: 2;
     }
