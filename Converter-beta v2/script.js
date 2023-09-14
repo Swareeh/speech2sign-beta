@@ -163,7 +163,7 @@ convert_btn.onclick = async function () {
                 } else {
                     output.src = `./Assets/Signs/alphabets/${word[i]}.jpg`
                 }
-                await delay(1000)
+                await delay(600)
             }
             output.src = './Assets/white.png'
         }
