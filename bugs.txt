@@ -1,0 +1,35 @@
+Need to add:
+Make the website responsive in multiple devices
+Build about developers page [PRIORITY ONE]
+
+
+
+
+
+THINGS TO PUSH TO MAIN CODE:
+Disable scroll during toggled nav bar (Mobile)
+
+
+
+Tried but not working:
+add an exit button while the converter is running
+
+
+
+
+
+Less Important:
+Search for other animations or find the letter 'j' in simax animations
+
+Patched:
+BUG: Video is bg is loading slow
+BUG: When the button is clicked a second time before the 1st one is complete, it overlaps.
+BUG: file path is case sensitive in github
+
+Added Features:
+Words to sign (using if and elif statments)
+return to main website option
+Edit bg video 1min.. (reduce file size)
+change id of speech to text "click_to_convert" to "mic_btn" or something.
+Combine the UI and UX of the converter
+Create a website for presenting.
