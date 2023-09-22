@@ -1,0 +1,332 @@
+/* Importing Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* Importing Kanit */
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+    /* background-color: #A7428B; */
+    /* background-color: #A5408B; */
+    background-image: url('./Assets/bg.png');
+    background-size: auto;
+    /* background-repeat: no-repeat; */
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: lighter;
+}
+
+.container {}
+
+#menu_brgr {
+    position: absolute;
+    /* top: 30px; */
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+    width: 30px;
+    display: flex;
+    z-index: 2;
+}
+
+#back_btn {
+    display: none;
+    color: white;
+    position: absolute;
+    /* top: 30px; */
+    top: 1rem;
+    left: 1rem;
+    transition: 0.5s;
+    /* z-index: 2; */
+    /* height: 100px; */
+}
+
+#back_btn:hover {
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#nav_connections {
+    position: fixed;
+    left: 450px;
+    /* left: 200vh; */
+    transition: 1s;
+    /* transition: 0.75s; */
+    background-color: #022135;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    z-index: 1;
+}
+
+ul {
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    position: relative;
+    list-style: none;
+    font-size: 20px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    left: 0px;
+    top: 300px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+li {
+    text-align: center;
+    margin: 0px;
+    padding-left: 0;
+}
+
+li:hover {
+    color: #A94EFF;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.main_content {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#mic_icon {
+    border: 50px solid #C453A2;
+    border-radius: 50%;
+    padding: 10px;
+    height: 50px;
+    /* height: 200px; */
+    background-color: #C453A2;
+}
+
+#status {
+    text-align: center;
+}
+
+#slider_div {
+    background-color: #1F2022;
+    height: 90vh;
+    position: relative;
+    bottom: -200px;
+    transition: 0.5s;
+}
+
+.user_tools {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    border: 10px solid #1F2022;
+    /* border: 10px solid white; */
+}
+
+#input_textarea {
+    width: 78%;
+    height: 50px;
+    resize: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#convert_btn {
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+}
+
+#output {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1025px) {
+    body {
+        /* overflow: visible; */
+    }
+
+    .container {}
+
+    #nav_connections {
+        position: static;
+        left: auto;
+        transition: 0s;
+        background-color: transparent;
+        height: auto;
+        width: auto;
+        text-align: left;
+        margin: 0;
+        z-index: 0;
+    }
+
+    #back_btn {
+        display: none;
+        color: white;
+        position: absolute;
+        /* top: 30px; */
+        top: 2rem;
+        left: 2rem;
+        transition: 0.5s;
+    }
+
+    #back_btn:hover {
+        cursor: pointer;
+    }
+
+    #menu_brgr {
+        display: none;
+        position: absolute;
+        top: 30px;
+        right: 1rem;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 21px;
+        width: 30px;
+    }
+
+    .bar {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    ul {
+        font-family: 'Kanit', sans-serif;
+        display: flex;
+        position: relative;
+        left: 425px;
+        top: 35px;
+        list-style: none;
+        font-size: 20px;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 10px;
+        padding: 0;
+        text-align: center;
+    }
+
+    li {
+        padding-left: 20px;
+    }
+
+    li:hover {
+        color: #A94EFF;
+        cursor: pointer;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .main_content {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    #mic_icon {
+        border: 50px solid #C453A2;
+        border-radius: 50%;
+        padding: 10px;
+        height: 50px;
+        /* height: 200px; */
+        background-color: #C453A2;
+    }
+
+    #status {
+        text-align: center;
+    }
+
+    #slider_div {
+        background-color: #1F2022;
+        height: 90vh;
+        position: relative;
+        bottom: -200px;
+        transition: 0.5s;
+    }
+
+    .user_tools {
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        border: 10px solid #1F2022;
+        /* border: 10px solid white; */
+    }
+
+    #input_textarea {
+        width: 78%;
+        height: 50px;
+        resize: none;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    #convert_btn {
+
+        background-image: linear-gradient(135deg, #008aff, #86d472);
+        /* border-radius: 6px; */
+        box-sizing: border-box;
+        color: #ffffff;
+        display: block;
+        height: 50px;
+        font-size: 1.4em;
+        font-weight: 600;
+        padding: 4px;
+        position: relative;
+        text-decoration: none;
+        width: 7em;
+        z-index: 2;
+
+        border-radius: 10px;
+        background-color: blue;
+        color: white;
+    }
+
+    #convert_btn:hover {
+        color: #fff;
+        cursor: pointer;
+    }
+
+    #output {
+        position: relative;
+        bottom: 100px;
+        height: fit-content;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        width: 100%;
+        scale: 50%;
+    }
+}

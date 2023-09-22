@@ -102,7 +102,7 @@ video {
 .discover_btn {
     position: relative;
     top: 170px;
-    right: 70px;
+    right: 225px;
     padding: 10px 50px 10px 50px;
     font-size: 20px;
     border-radius: 40px;
@@ -163,7 +163,7 @@ video {
     height: 400px;
     position: relative;
     top: 100px;
-    left: 25px;
+    left: 50px;
 }
 
 #main_div-3 h3 {
