@@ -56,10 +56,6 @@ body {
     border-radius: 10px;
 }
 
-#nav_connections {
-    /* display: flex; */
-}
-
 ul {
     font-family: 'Kanit', sans-serif;
     display: flex;
@@ -217,25 +213,14 @@ video {
 
 @media only screen and (orientation: portrait) and (min-width: 320px) and (max-width: 428px) {
 
-
-    * {}
-
-    html::-webkit-scrollbar {}
-
-    html::-webkit-scrollbar-thumb {}
-
     body {
         background-image: url('./Resources/bg.jpg');
     }
-
-    #main_div-1 {}
 
     #menu_brgr {
         display: flex;
         z-index: 2;
     }
-
-    .bar {}
 
     #nav_connections {
         position: fixed;
@@ -266,10 +251,6 @@ video {
         padding-left: 0;
     }
 
-    li:hover {}
-
-    a {}
-
     video {
         display: none;
     }
@@ -292,12 +273,12 @@ video {
     }
 
     .discover_btn {
+        margin-top: 5px;
         position: static;
         top: 0px;
         right: 0px;
     }
 
-    .discover_btn:hover {}
 
     #main_div-2 {
         height: 100vh;
@@ -308,19 +289,21 @@ video {
     .main_div-text {
         /* text-align: center; */
         position: relative;
-        top: 250px;
+        top: 300px;
         left: 0px;
-        width: 100%;
+        width: 95%;
         height: auto;
         font-family: 'Roboto', sans-serif;
         font-weight: lighter;
-        margin: 1px solid white;
+        margin-top: 100px;
+        margin-left: 1rem;
+        /* margin: 10rem solid white;/ */
     }
 
     .img_deaf {
         position: relative;
-        bottom: 555px;
-        left: 5px;
+        bottom: 500px;
+        left: 20px;
         right: 0;
         border-radius: 5px;
         clip-path: none;
@@ -345,7 +328,7 @@ video {
         height: 200px;
         position: relative;
         top: 40px;
-        left: 35px;
+        left: 75px;
     }
 
     #main_div-3 h3 {
@@ -353,7 +336,8 @@ video {
         bottom: 0px;
         top: 50px;
         left: 0px;
-        width: 100%;
+        width: 95%;
+        margin-left: 1rem;
         height: auto;
         font-family: 'Roboto', sans-serif;
         font-weight: lighter;
@@ -363,7 +347,7 @@ video {
         position: relative;
         bottom: 0px;
         top: 70px;
-        left: 13vh;
+        left: 1vh;
         padding: 10px 20px 10px 20px;
         background: rgb(233, 233, 233);
         font-weight: bold;
@@ -378,6 +362,6 @@ video {
         cursor: pointer;
         background-color: #022135;
         color: white;
-    }   
+    }
 
 }
