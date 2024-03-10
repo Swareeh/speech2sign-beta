@@ -1,0 +1,11 @@
+NOTE: Check all todos and fixmes in code...
+
+TODO:
+When mic is on give a pulsing animation
+Add the other animations of 'hello'
+
+FIXME::
+make the input convert to lowercase (for github)
+
+Complted Features:
+Make the mic icon shrik and increase in size in a loop (added using key frames)

@@ -1,0 +1,23 @@
+CUURENT STATUS:
+
+when clicked the icon of the mic during unmute and mute is changing but the pulsing effect is missing and the mic on first click it shows muted but mic is on in the background.
+
+
+step one:
+Identiy what is causing the mic icon to change in the first place..
+
+
+
+
+
+
+
+Ideas:
+When mic is on give a pulsing animation
+Add the other animations of 'hello'
+
+BUG:
+make the input convert to lowercase (for github)
+
+Complted Features:
+Make the mic icon shrik and increase in size in a loop (added using key frames)
