@@ -120,61 +120,51 @@ async function converter() {
         if (word == 'YES') {
             output.src = './Assets/Signs/Words/YES.jpg'
             await delay(1000)
-            // output.src = './Assets/white.png'
         }
 
         else if (word == 'LOVE') {
             output.src = './Assets/Signs/Words/LOVE.jpg'
             await delay(1000)
-            // output.src = './Assets/white.png'
         }
 
         else if (word == 'BELIEVE') {
             output.src = './Assets/Signs/Words/BELIEVE.jpg'
             await delay(1000)
-            // output.src = './Assets/white.png'
         }
 
         else if (word == 'FRIEND') {
             output.src = './Assets/Signs/Words/FRIEND.jpg'
             await delay(1000)
-            // output.src = './Assets/white.png'
         }
 
         else if (word == 'BYE') {
             output.src = './Assets/Signs/Words/BYE.jpg'
             await delay(1000)
-            // output.src = './Assets/white.png'
         }
 
         else if (word == 'FRIENDS') {
             output.src = './Assets/Signs/Words/FRIENDS.jpg'
             await delay(1000)
-            // output.src = './Assets/white.png'
         }
 
         else if (word == 'INSPIRATION') {
             output.src = './Assets/Signs/Words/INSPIRATION.jpg'
             await delay(1000)
-            // output.src = './Assets/white.png'
         }
 
         else if (word == 'NO') {
             output.src = './Assets/Signs/Words/NO.jpg'
             await delay(1000)
-            // output.src = './Assets/white.png'
         }
 
         else if (word == 'PLEASE') {
             output.src = './Assets/Signs/Words/PLEASE.jpg'
             await delay(1000)
-            // output.src = './Assets/white.png'
         }
 
         else if (word == 'STOP') {
             output.src = './Assets/Signs/Words/STOP.jpg'
             await delay(1000)
-            // output.src = './Assets/white.png'
         }
 
         else {
@@ -184,8 +174,8 @@ async function converter() {
                 if (word[i] == '.') {
                     output.src = `./Assets/S2S.png`
                 } else {
-                    // output.src = `./Assets/Signs/animated/${word[i]}.gif`
-                    output.src = `./Assets/Signs/animated/${word[i]} EZGIF.gif`
+                    output.src = `./Assets/Signs/animated/${word[i]}.gif`
+                    // output.src = `./Assets/Signs/animated/${word[i]} EZGIF.gif`
                 }
                 await delay(1000)
             }
