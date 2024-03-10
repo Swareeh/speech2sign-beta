@@ -1,11 +1,10 @@
-NOTE: Check all todos and fixmes in code...
-
 TODO:
-When mic is on give a pulsing animation
+Make all gifs the same size as S2S.png
 Add the other animations of 'hello'
 
 FIXME::
 make the input convert to lowercase (for github)
 
 Complted Features:
+When mic is on give a pulsing animation
 Make the mic icon shrik and increase in size in a loop (added using key frames)

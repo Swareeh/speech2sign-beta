@@ -49,11 +49,8 @@ body {
     background-color: white;
     border-radius: 50%;
     margin: auto auto 45% auto;
-    /* width: 50%; */
-    /* height: 30%; */
     width: 50vw;
     height: 50vw;
-    /* Height and width was 175px */
     cursor: pointer;
     animation: scaling 1s ease-in-out forwards infinite alternate;
 }
