@@ -18,6 +18,6 @@ The function of this website is very simple and basic
 - If the word is not found the website will finger spell the letters in the word.
 
 # Usage:
-You can use this website on [here](https://swareeh.github.io/Speech2Sign)
+You can use this on [here](https://swareeh.github.io/speech2sign-beta) (Beta Version)
 <hr>
 <center><h6>Developed by Abdul Swareeh</h6></center>
