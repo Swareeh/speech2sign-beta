@@ -1,0 +1,15 @@
+
+
+
+TODO:
+Make all gifs the same size as S2S.png
+Desktop Responsive
+
+FIXME::
+
+Complted Features:
+When mic is on give a pulsing animation
+Make the mic icon shrik and increase in size in a loop (added using key frames)
+make the input convert to lowercase/UPPERCASE (for github)
+Add the other animations of 'hello'
+wdith of slider making 100% 
