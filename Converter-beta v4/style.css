@@ -12,7 +12,7 @@
 }
 
 body {
-    /* overflow: hidden; */
+    overflow: hidden;
     background-image: url('./Assets/Bg_Desktop.jpg');
     background-size: cover;
     background-repeat: no-repeat;
