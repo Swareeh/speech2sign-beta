@@ -8,7 +8,7 @@ const repeat_btn = document.getElementById('repeat_btn')
 const mic_btn = document.getElementById('pulse')
 const pulse_spans = document.querySelectorAll('.pulse_span')
 
-// EXTRA STUFF FOR THE PROGRAM------------------
+// EXTRA FUNCTIONS FOR THE PROGRAM------------------
 
 function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -90,7 +90,7 @@ async function Speech2Text() {
             //For Desktop
             if (window.screen.width > 769) {
                 slider.style.left = '70%'
-                back_btn.style.display = 'none'
+                back_btn.style.display = 'block'
             }
 
 
@@ -123,6 +123,7 @@ async function Speech2Text() {
     }) // End of Promise 
     return promise
 }
+
 //------------------------------------------------------
 
 // Converter Function
@@ -138,11 +139,11 @@ async function converter() {
     for (let i = 0; i < input_value_words.length; i++) {
 
         var word = input_value_words[i]
-        fadeIn(output)
+        // fadeIn(output)
 
         const dictionary = {
             'HAPPY': './Assets/Signs/animated/words/HAPPY.gif',
-            // 'HELLO': './Assets/Signs/animated/words/HELLO.gif',
+            'HELLO': './Assets/Signs/animated/words/HELLO.gif',
             'HI': './Assets/Signs/animated/words/HI.gif',
             'GIPHY': './Assets/Signs/animated/words/GIPHY.gif',
             'DEAF': './Assets/Signs/animated/words/DEAF.gif',
@@ -174,7 +175,7 @@ async function converter() {
                     output.src = `./Assets/S2S.png`
                 } else {
                     output.src = `./Assets/Signs/animated/${word[i]}.gif`
-                    // output.src = `./Assets/Signs/animated/EZGIF/${word[i]}EZGIF.gif`
+                    // output.src = `./TESTS/A-resize.gif`
                 }
                 await delay(1000)
             }
@@ -184,7 +185,6 @@ async function converter() {
     }
 }
 //-----------------------------------------
-
 
 mic_btn.addEventListener('click', async function () {
     await Speech2Text()

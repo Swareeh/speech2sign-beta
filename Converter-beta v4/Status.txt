@@ -1,0 +1,18 @@
+FIXME:
+Partially made it desktop responsive but ouput is coming out of the slider div, did some changes to script for slider div desktop and mobile
+
+(PROBLEM WAS WITH THE FADEIN FUNCTION, disabled)
+
+
+
+TODO:
+Make all gifs the same size as S2S.png
+
+
+Complted Features:
+When mic is on give a pulsing animation
+Make the mic icon shrik and increase in size in a loop (added using key frames)
+make the input convert to lowercase/UPPERCASE (for github)
+Add the other animations of 'hello'
+wdith of slider making 100% 
+Desktop Responsive
