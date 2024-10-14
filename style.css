@@ -1,367 +1,82 @@
-/* Importing Kanit */
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-/* Importing Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-/* Importing Noto Sans Cypro Minoan */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Cypro+Minoan&display=swap');
-/* Importing Open Sans */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
-/* Desktop Responsive */
-
-* {
-    margin: 0;
-    scroll-behavior: smooth;
-}
-
-html::-webkit-scrollbar {
-    background-color: rgb(54, 12, 137);
-    width: 5px;
-    border-radius: 10px;
-    overflow-x: hidden;
-}
-
-html::-webkit-scrollbar-thumb {
-    background-color: #A94EFF;
-    border-radius: 10px;
-}
+/* Importing Josefin Sans */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
-    color: white;
-    overflow-x: hidden;
-    background-image: url('./Resources/bg2.jpg');
-    scroll-behavior: smooth;
-}
-
-#main_div-1 {
-    height: 100vh;
-}
-
-#menu_brgr {
-    position: absolute;
-    top: 30px;
-    right: 1rem;
-    display: none;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    justify-content: space-between;
-    height: 21px;
-    width: 30px;
+    height: 85vh;
+    background-image: url('./Resources/bg2.jpg');
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 25px;
 }
 
-.bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    width: 75%;
+    gap: 15px;
+}
+
+h1,h6 {
+    color: white;
+}
+
+.banner_box {
+    background-image: url('./Resources/Speech2Sign_logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #f4ecff;
+    height: 50%;
     border-radius: 10px;
-}
-
-ul {
-    font-family: 'Kanit', sans-serif;
-    display: flex;
-    position: relative;
-    left: 425px;
-    top: 35px;
-    list-style: none;
-    font-size: 20px;
-}
-
-li {
-    padding-left: 20px;
-}
-
-li:hover {
-    color: #A94EFF;
     cursor: pointer;
+    transition: 0.5s;
+    position: relative;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
-video {
+.simax {
     position: absolute;
-    height: auto;
-    width: 100%;
-    z-index: -1;
+    bottom: 0;
+    right: 10%;
+    max-height: 100%;
 }
 
-.branding {
-    position: relative;
-    top: 155px;
-    /* left: 325px; */
-    left: 335px;
-    align-content: center;
+.txt {
+    position: absolute;
+    bottom:0;
+    right: 0;
+    font-size: 25px;
 }
 
-.discover_btn {
-    position: relative;
-    top: 170px;
-    right: 225px;
-    padding: 10px 50px 10px 50px;
-    font-size: 20px;
-    border-radius: 40px;
-    background: transparent;
-    color: white;
-    border: 1px solid white;
-    transition: 0.5s;
-    font-weight: bold;
+.banner_box:hover {
+    transform: scale(1.02);
 }
 
-.discover_btn:hover {
-    transition: 0.5s;
-    background-color: white;
-    color: black;
-    border: 1px solid #1A0848;
-    cursor: pointer;
-}
-
-#main_div-2 {
-    height: 100vh;
-    background-image: url('./Resources/bg6.jpg');
-    clear: both;
-}
-
-.main_div-text {
-    position: relative;
-    top: 200px;
-    left: 100px;
-    width: 600px;
-    height: auto;
-    font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
-}
-
-.img_deaf {
-    position: relative;
-    bottom: 220px;
-    left: 700px;
-    border-radius: 5px;
-    clip-path: circle();
-    height: 450px;
-}
-
-#main_div-3 {
-    background-image: url('./Resources/bg8.jpg');
-    height: 100vh;
-}
-
-#main_div-3 h1 {
-    font-family: 'Noto Sans Cypro Minoan', sans-serif;
-    display: flex;
-    position: relative;
-    top: 20px;
-    justify-content: center;
-}
-
-.img_UI {
-    height: 400px;
-    position: relative;
-    top: 100px;
-    left: 50px;
-}
-
-#main_div-3 h3 {
-    position: relative;
-    bottom: 200px;
-    left: 700px;
-    width: 600px;
-    height: auto;
-    font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
-}
-
-#main_div-3 button {
-    position: relative;
-    bottom: 150px;
-    left: 700px;
-    padding: 10px 20px 10px 20px;
-    background: rgb(233, 233, 233);
-    font-weight: bold;
-    color: #022135;
-    font-size: 15px;
-    border: 1px solid white;
-    transition: 0.5s;
-}
-
-#main_div-3 button:hover {
-    transition: 0.5s;
-    cursor: pointer;
-    background-color: #022135;
+.box-1:hover, .box-2:hover, .box-3:hover{
+    background-color: transparent;
+    border: 1px solid #0ca3aa;
     color: white;
 }
 
-#credits {
+.container {
+    display: flex;
+    height: 49%;
+    gap: 15px;
+}
+
+.box-1,.box-2,.box-3 {
+    color: #131a5e;
+    border-radius: 10px;
+    width: 33%;
+    background-color: #0ca3aa;
+    cursor: pointer;
+    transition: 0.5s;
+
     display: flex;
     justify-content: center;
-    background-color: #022135;
-    padding: 10px;
-}
-
-#credits h5 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: lighter;
-    font-size: 15px;
-    opacity: 75%;
-
-}
-
-/* Tablet Responsive */
-
-/* Mobile Responsive */
-
-@media only screen and (orientation: portrait) and (min-width: 320px) and (max-width: 428px) {
-
-    body {
-        background-image: url('./Resources/bg.jpg');
-    }
-
-    #menu_brgr {
-        display: flex;
-        z-index: 2;
-    }
-
-    #nav_connections {
-        position: fixed;
-        left: 450px;
-        transition: 0.75s;
-        background-color: #022135;
-        height: 100vh;
-        width: 100%;
-        text-align: center;
-        margin: 0px;
-        z-index: 1;
-    }
-
-    ul {
-        justify-content: center;
-        flex-direction: column;
-        gap: 10px;
-        position: relative;
-        left: 0px;
-        top: 300px;
-        padding: 0px 0px 0px 0px;
-        text-align: center;
-    }
-
-    li {
-        text-align: center;
-        margin: 0px;
-        padding-left: 0;
-    }
-
-    video {
-        display: none;
-    }
-
-    .main_div-discover {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 85vh;
-    }
-
-
-    .branding {
-        position: static;
-        top: 0px;
-        left: 0px;
-        height: auto;
-        width: 100%;
-    }
-
-    .discover_btn {
-        margin-top: 5px;
-        position: static;
-        top: 0px;
-        right: 0px;
-    }
-
-
-    #main_div-2 {
-        height: 100vh;
-        background-image: url('./Resources/bg6.jpg');
-        clear: both;
-    }
-
-    .main_div-text {
-        /* text-align: center; */
-        position: relative;
-        top: 300px;
-        left: 0px;
-        width: 95%;
-        height: auto;
-        font-family: 'Roboto', sans-serif;
-        font-weight: lighter;
-        margin-top: 100px;
-        margin-left: 1rem;
-        /* margin: 10rem solid white;/ */
-    }
-
-    .img_deaf {
-        position: relative;
-        bottom: 500px;
-        left: 20px;
-        right: 0;
-        border-radius: 5px;
-        clip-path: none;
-        height: 250px;
-    }
-
-    #main_div-3 {
-        background-image: url('./Resources/bg8.jpg');
-        height: 100vh;
-    }
-
-    #main_div-3 h1 {
-        font-family: 'Noto Sans Cypro Minoan', sans-serif;
-        display: flex;
-        position: relative;
-        top: 20px;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .img_UI {
-        height: 200px;
-        position: relative;
-        top: 40px;
-        left: 75px;
-    }
-
-    #main_div-3 h3 {
-        position: relative;
-        bottom: 0px;
-        top: 50px;
-        left: 0px;
-        width: 95%;
-        margin-left: 1rem;
-        height: auto;
-        font-family: 'Roboto', sans-serif;
-        font-weight: lighter;
-    }
-
-    #main_div-3 button {
-        position: relative;
-        bottom: 0px;
-        top: 70px;
-        left: 1vh;
-        padding: 10px 20px 10px 20px;
-        background: rgb(233, 233, 233);
-        font-weight: bold;
-        color: #022135;
-        font-size: 15px;
-        border: 1px solid white;
-        transition: 0.5s;
-    }
-
-    #main_div-3 button:hover {
-        transition: 0.5s;
-        cursor: pointer;
-        background-color: #022135;
-        color: white;
-    }
-
+    align-items: center;
 }

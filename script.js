@@ -1,14 +1,17 @@
-const nav_connections = document.getElementById('nav_connections')
-const menu_brgr = document.getElementById('menu_brgr')
-const web_body = document.getElementById('web_body')
+// alert('Not all versions are functional')
 
-menu_brgr.addEventListener('click', function() {
-    if (nav_connections.style.left == '450px') {
-        nav_connections.style.left = '0px';
-        web_body.style.overflow = 'hidden'
-    } else{
-        nav_connections.style.left = '450px';
-        web_body.style.overflow = 'visible'
+function prototype() {
+    window.location.href = "../Converter-beta/";
+}
 
-    }
-})
+function version_2() {
+    window.location.href = "../Converter-beta%20v2/";
+}
+
+function version_3() {
+    window.location.href = "../Converter-beta%20v3/";
+}
+
+function version_4() {
+    window.location.href = "https://swareeh.github.io/Speech2Sign/";
+}
