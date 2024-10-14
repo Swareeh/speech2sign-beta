@@ -9,7 +9,7 @@ A simple website that converts speech into American Sign Language (ASL)
 
 </center>
 
-# What does it do?
+# How does it work?
 The function of this website is very simple and basic
 
 - It detects speech and converts it into text.
@@ -18,6 +18,11 @@ The function of this website is very simple and basic
 - If the word is not found the website will finger spell the letters in the word.
 
 # Usage:
-You can use this on [here](https://swareeh.github.io/speech2sign-beta) (Beta Version)
+- You can check out the final version [here](https://github.com/Swareeh/Speech2Sign)<br>
+- Check out all the other previous versions [here](https://swareeh.github.io/speech2sign-beta) 
 <hr>
+
+# Problems you might face:
+- Even the final version is not perfect. It's still buggy and may require multiple reloads to work properly. 
+- There might be some browser compatibility issues as well. (Works fine on chrome)
 <center><h6>Developed by Abdul Swareeh</h6></center>
